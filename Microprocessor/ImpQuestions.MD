@@ -51,7 +51,7 @@ The 8085 microprocessor contains various registers such as the accumulator for A
 
 <br><br><br>
 
-# 3.  Discuss All the register used in 8085 microprocessor.
+# 3.  Discuss Architecture of a Basic Computer along with its component
 The basic computer architecture refers to a simplified model used in digital logic and computer organization to demonstrate how a computer works at a fundamental level. It consists of three main units:
 
 * Central Processing Unit (CPU)
