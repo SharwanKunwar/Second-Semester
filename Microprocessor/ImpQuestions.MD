@@ -48,3 +48,47 @@ The 8085 microprocessor contains various registers such as the accumulator for A
 
 ##  9. Address Buffer Register
 → Temporarily stores the address being sent to or received from memory.
+
+<br><br><br>
+
+# 3.  Discuss All the register used in 8085 microprocessor.
+The basic computer architecture refers to a simplified model used in digital logic and computer organization to demonstrate how a computer works at a fundamental level. It consists of three main units:
+
+* Central Processing Unit (CPU)
+
+* Memory Unit
+
+* Input/Output (I/O) Unit
+
+<br>
+
+
+---
+
+### 1. Central Processing Unit (CPU)
+
+The CPU is the core component of a computer responsible for executing instructions and processing data. It consists of the **Arithmetic Logic Unit (ALU)**, **Control Unit (CU)**, and **Registers**. It performs operations like calculations, logic decisions, and instruction control.
+
+📌 **Example:**  
+When you play a game, the CPU calculates player movement, updates graphics, and controls game logic in real-time.
+
+---
+
+### 2. Memory Unit
+
+The memory unit stores all the data and instructions that the CPU needs during execution. It is divided into **primary memory** (like **RAM** and **ROM**) and is essential for the computer's performance. It holds programs currently being executed and temporary data.
+
+📌 **Example:**  
+When editing a photo, the image and editing tools are loaded into RAM, allowing fast access and changes before saving it to the hard drive.
+
+---
+
+### 3. Input/Output (I/O) Unit
+
+The I/O unit manages data exchange between the computer and external devices. **Input devices** send data to the system, while **output devices** display results. I/O interfaces ensure smooth communication between hardware and the CPU.
+
+📌 **Example:**  
+When you type on a keyboard (input), the text appears on the monitor (output), and the I/O system handles this interaction.
+
+---
+
