@@ -92,3 +92,20 @@ When you type on a keyboard (input), the text appears on the monitor (output), a
 
 ---
 
+<br><br><br>
+
+# 4.  Difference between Hardware Control Unit and Microprogrammed Control Unit 
+
+<br> 
+
+## Hardware Control unit:
+A Hardware Control Unit is implemented using combinational logic circuits like gates and flip-flops to directly generate control signals for executing instructions. It operates fast but is difficult to modify once built.
+
+* Example: <br>
+Used in RISC processors such as ARM architecture, where speed is critical and instruction sets are simple
+
+## Microprogrammed Control Unit:
+A Microprogrammed Control Unit uses a sequence of microinstructions stored in memory (control memory) to generate control signals. It is easier to modify and flexible but operates slower compared to hardware control.
+
+* Example: <br>
+Used in CISC processors such as Intel 8086, where complex instructions are broken down into smaller micro-operations.
