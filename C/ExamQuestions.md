@@ -56,3 +56,39 @@ void greet(void) {
     printf("Hello from the greet function!\n");
 }
 ```
+
+<br><br><br>
+
+# 2. Define keywords, identifiers, constants, and variables with examples.
+
+## Keywords
+**Keywords** are reserved words in C that have predefined meanings. These cannot be used as variable names or function names.
+
+### 🧾 Examples: `int`, `float`, `return`, `if`, `else`, `while`, `for`, `void`, `char`
+
+## Identifiers
+Identifiers are names used to identify variables, functions, arrays, etc. These are defined by the programmer.
+* Rules:
+1. Must start with a letter (A-Z, a-z) or underscore _
+2. Can contain letters, digits (0–9), or underscores
+3. Cannot be a keyword
+4. Case-sensitive (Score and score are different)
+
+## Constants
+Constants are fixed values that do not change during the execution of a program.
+
+* Types:
+1. Integer constants: `10`, `20`, `30`
+2. Floating-point constants: `3.14`, `-0.5`
+3. Character constants: `'A'`, `'a'`
+4. String constants: `"Hello"`, `"World"`
+
+## Variables
+Variables are container which store value or we can say memory locations that store data. Their values can change during program execution.
+
+```c 
+int age = 18;
+age++;
+printf("now age is : %d\n",age);
+```
+
