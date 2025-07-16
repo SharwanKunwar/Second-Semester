@@ -128,3 +128,114 @@ The compilation process happens in **four main steps**:
 - Resolves external references like `printf()`.
 
 ---
+
+<br><br><br>
+
+# Differentiate between: `Compiler vs Interpreter`, `Call by value vs Call by reference`, `while vs do-while`
+
+##  Compiler vs Interpreter
+A compiler translates the whole code into machine code at once, creating an executable. An interpreter translates and runs code line by line. Compilers are faster after compile-time; interpreters show errors one at a time and don’t create files.
+
+
+## Call by Value vs Call by Reference
+In call by value, a copy of the variable is passed, so changes don’t affect the original. In call by reference, the actual memory address is passed, allowing the function to modify the original variable directly.
+
+## while vs do-while
+while checks the condition before executing the loop body, so it may run zero times. do-while executes the loop body once before checking the condition, ensuring it runs at least once regardless of the condition.
+
+<br><br><br>
+
+#  Data Types in C (with Table Explanation)
+In C, data types define the type of data a variable can hold — such as integers, characters, or floating-point numbers. They help the compiler allocate appropriate memory and understand how to interpret the data.
+
+## 🔢 Types of Data Types in C
+
+| **Category**        | **Data Type**                    | **Size (Bytes)** | **Description**                                |
+|---------------------|----------------------------------|------------------|------------------------------------------------|
+| **Basic / Primary** | `int`                            | 4                | Stores integers (e.g., 1, -100, 45)             |
+|                     | `char`                           | 1                | Stores single characters (e.g., 'a', 'Z')       |
+|                     | `float`                          | 4                | Stores decimal numbers (e.g., 3.14)             |
+|                     | `double`                         | 8                | Stores larger decimal numbers                  |
+| **Derived**         | `array`, `pointer`, `function`, `structure` | Varies         | Built from basic data types                    |
+| **Enumeration**     | `enum`                           | 4                | User-defined data type with named constants     |
+| **Void**            | `void`                           | 0                | Represents no value or no return type          |
+
+---
+
+## 🧠 Example
+
+```c
+int age = 20;
+char grade = 'A';
+float height = 5.8;
+```
+
+
+<br><br><br>
+
+# What is type casting? Give an example.
+Type casting in C is the process of converting one data type into another manually. It’s often used when you want to perform operations between different data types or avoid data loss.
+
+* syntax:
+```
+(type) variable;
+```
+
+* Example:
+```c
+int a = 10, b = 3;
+float result;
+
+result = (float) a / b;  // Type casting int to float
+printf("%f", result);    // Output: 3.333333
+```
+
+Type casting is used to convert values from one data type to another, such as int to float, to ensure correct calculations or formatting.
+
+<br><br><br>
+
+# What is file handling in C? Explain fopen(), fclose(), fprintf(), fscanf().
+File handling in C allows programs to create, read, write, and modify files stored on the disk. Instead of using input/output on the console, file handling lets you store data permanently in files like .txt.
+
+
+
+| **Function** | **Purpose**                                       | **Syntax**                                  |
+|--------------|---------------------------------------------------|----------------------------------------------|
+| `fopen()`    | Opens a file in specified mode (read, write, etc.)| `FILE *fp = fopen("file.txt", "r");`         |
+| `fclose()`   | Closes an opened file                             | `fclose(fp);`                                |
+| `fprintf()`  | Writes formatted data to a file                   | `fprintf(fp, "Name: %s", name);`             |
+| `fscanf()`   | Reads formatted data from a file                  | `fscanf(fp, "%d", &age);`                    |
+
+<br>
+
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+
+    // Open file in write mode
+    fp = fopen("data.txt", "w");
+    if (fp == NULL) {
+        printf("File cannot be opened!\n");
+        return 1;
+    }
+
+    // Write to file
+    fprintf(fp, "Hello, Sharwan!\n");
+    fclose(fp);
+
+    // Open file in read mode
+    fp = fopen("data.txt", "r");
+    char str[100];
+    fscanf(fp, "%[^\n]", str);
+    printf("Read from file: %s\n", str);
+
+    fclose(fp);
+    return 0;
+}
+```
+
+* Table
+
+
